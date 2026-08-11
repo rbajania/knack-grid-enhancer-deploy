@@ -1,0 +1,10 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  included_files = ["netlify/functions/assets/*"]
+
+[[redirects]]
+  from = "/kge.js"
+  to = "/.netlify/functions/serve-script"
+  status = 200
